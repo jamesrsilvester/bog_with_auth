@@ -13,8 +13,13 @@ class CreaturesController < ApplicationController
     creature_params = params.require(:creature).permit(:name, :description)
     creature = Creature.new(creature_params)
     if creature.save
-      redirect_to creatures_path
+      redirect_to creature_path(creature)
     end
+  end
+
+  def show
+    creatureId = params[:id]
+    @creature = Creature.find_by(id: creatureId)
   end
 
 end
