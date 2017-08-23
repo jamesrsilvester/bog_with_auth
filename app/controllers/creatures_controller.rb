@@ -22,4 +22,10 @@ class CreaturesController < ApplicationController
     @creature = Creature.find_by(id: creatureId)
   end
 
+  def edit
+    creatureId = params[:id]
+    @creature = Creature.find_by(id: creatureId)
+    
+  end
+
 end

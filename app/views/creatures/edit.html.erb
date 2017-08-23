@@ -1,0 +1,17 @@
+
+<div class="container">
+  <h2>Edit creature</h2>
+
+  <%= form_for @creature do |f| %>
+
+  <span>Name</span>
+  <%= f.text_field :name %>
+
+  <span>Description</span>
+  <%= f.text_area :description %>
+
+  <%= f.submit "Save Creature"%>
+
+  <% end %>
+
+</div>
