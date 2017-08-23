@@ -1,13 +1,18 @@
-<h1>Creatures in the Bog</h1>
 
-<ul>
+<div class="container">
 
-  <% @creatures.each do |element|%>
-  <li>
-    <p><%= element.name %></p>
-    <p><%= element.description %></p>
-  </li>
+  <h1>Creatures in the Bog</h1>
 
-  <% end %>
+    <% @creatures.each do |element|%>
 
-</ul>
+      <div class="row">
+
+        <div class="col m3"><%= element.name %></div>
+        <div class="col m3"><%= element.description %></div>
+
+      </div>
+
+    <% end %>
+
+
+</div>
