@@ -1,0 +1,13 @@
+<h1>Creatures in the Bog</h1>
+
+<ul>
+
+  <% @creatures.each do |element|%>
+  <li>
+    <p><%= element.name %></p>
+    <p><%= element.description %></p>
+  </li>
+
+  <% end %>
+
+</ul>

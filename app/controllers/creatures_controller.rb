@@ -3,7 +3,7 @@ class CreaturesController < ApplicationController
   #display all creatures
   def index
 
-    @creatures = Creatures.all
+    @creatures = Creature.all
 
   end
 
