@@ -6,7 +6,13 @@
 
         <div class="col m3"><%= @creature.name %></div>
         <div class="col m3"><%= @creature.description %></div>
-
+        <div class="col m3">
+          <%= button_to "Delete", @creature, method: :delete %>
+        </div>
       </div>
+
+      <a href="/creatures">All Creatures</a>
+      <a href="/creatures/new">Add a Creature</a>
+
 
 </div>
